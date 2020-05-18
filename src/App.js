@@ -7,6 +7,13 @@ Survey.Survey.cssType = "bootstrap";
 
 class App extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            surveyData: {}
+        };
+    }
+
     render() {
         return (
             <div className="App">
@@ -14,9 +21,14 @@ class App extends Component {
 
               <Survey.Survey
                 json={config}
+                onComplete={this.onComplete}
               />
             </div>
         );
+    }
+
+    onComplete({data}) {
+        console.log(`[App.js] onComplete:: data: ${JSON.stringify(data)}`);
     }
 }
 

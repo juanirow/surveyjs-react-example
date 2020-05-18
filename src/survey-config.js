@@ -1,4 +1,5 @@
 const config = {
+    "locale": "es",
     "pages": [
         {
             "name": "page1",
