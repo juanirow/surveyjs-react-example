@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import config from './survey-config.js';
+import * as Survey from 'survey-react';
 import './App.css';
+
+Survey.Survey.cssType = "bootstrap";
 
 class App extends Component {
 
@@ -8,6 +11,10 @@ class App extends Component {
         return (
             <div className="App">
               <h1>App Component</h1>
+
+              <Survey.Survey
+                json={config}
+              />
             </div>
         );
     }
