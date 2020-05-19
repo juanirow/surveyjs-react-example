@@ -1,5 +1,11 @@
 const config = {
     "locale": "es",
+    "completedBeforeHtml": {
+        "es": "<h1> Completado El Survey </h1>"
+    },
+    "loadingHtml": {
+        "es": "<h1>Cargando Survey</h1>"
+    },
     "pages": [
         {
             "name": "page1",
@@ -22,7 +28,6 @@ const config = {
                     "title": "Title question 2 ",
                     "description": "Tis is a description ",
                     "isRequired": true,
-                    "hasComment": true,
                     "commentText": "Esto es un comentario ",
                     "choices": [
                         {
@@ -37,14 +42,17 @@ const config = {
                             "value": "item3",
                             "text": "text item 3"
                         }
-                    ]
+                    ],
+                    "hasNone": true
                 }
             ]
         }
     ],
     "showCompletedPage": false,
     "showPageNumbers": true,
-    "goNextPageAutomatic": true
+    "showProgressBar": "bottom",
+    "goNextPageAutomatic": true,
+    "questionsOnPageMode": "questionPerPage"
 };
 
 export default config;
