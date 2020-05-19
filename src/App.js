@@ -3,7 +3,7 @@ import config from './survey-config.js';
 import * as Survey from 'survey-react';
 import './App.css';
 
-Survey.Survey.cssType = "bootstrap";
+Survey.StylesManager.applyTheme("default");
 
 class App extends Component {
 
@@ -27,8 +27,8 @@ class App extends Component {
         );
     }
 
-    onComplete({data}) {
-        console.log(`[App.js] onComplete:: data: ${JSON.stringify(data)}`);
+    onComplete = (survey, options) => {
+        console.log(`[App.js] onComplete:: survey: ${JSON.stringify(survey.data)} \n options: ${JSON.stringify(options)}`);
     }
 }
 
