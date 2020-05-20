@@ -27,6 +27,14 @@ class App extends Component {
         console.log(`[App.js] onCurrentPageChanged:: survey: ${JSON.stringify(survey)} \n options: ${JSON.stringify(options)}`);
     }
 
+    /**
+     * Validate a question
+     * @param options { Object } options.value to get the response of the question and if to show a custom error set the options.error
+     */
+    onValidateQuestion = (survey, options) => {
+        console.log(`[App.js] onValidateQuestion:: options: ${JSON.stringify(options)}`);
+    }
+
 
     render() {
         const survey = !this.state.isCompleted ? (
@@ -34,6 +42,7 @@ class App extends Component {
               json={config}
               onComplete={this.onComplete}
               onCurrentPageChanged={this.onCurrentPageChanged}
+              onValidateQuestion={this.onValidateQuestion}
               showCompletePage={false}
             /> ) : (
                 <h1>Survey Completed</h1>
