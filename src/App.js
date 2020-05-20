@@ -16,6 +16,14 @@ class App extends Component {
         this.onComplete = this.onComplete.bind(this);
     }
 
+    /**
+     * The event is fired after a user clicks the 'Complete' button and finishes a survey. Use this event to send the survey data to your web server.
+     * sender - the survey object that fires the event.
+     * options.showDataSaving(text) - call this method to show that the survey is saving survey data on your server. The text is an optional parameter to show a custom message instead of default.
+     * options.showDataSavingError(text) - call this method to show that an error occurred while saving the data on your server. If you want to show a custom error, use an optional text parameter.
+     * options.showDataSavingSuccess(text) - call this method to show that the data was successfully saved on the server.
+     * options.showDataSavingClear - call this method to hide the text about the saving progress.
+     */
     onComplete = (survey, options) => {
         console.log(`[App.js] onComplete:: survey: ${JSON.stringify(survey.data)} \n options: ${JSON.stringify(options)}`);
         this.setState({
@@ -23,13 +31,30 @@ class App extends Component {
         });
     }
 
+    /**
+     * The event is fired when the current page has been changed to another page.
+     * Typically it happens when a user click on 'Next' or 'Prev' buttons.
+     * sender - the survey object that fires the event.
+     * option.oldCurrentPage - a previous current/active page.
+     * option.newCurrentPage - a new current/active page.
+     * option.isNextPage - commonly means, that end-user press the next page button. In general,
+     *                     it means that options.newCurrentPage is the next page after options.oldCurrentPage
+     * option.isPrevPage - commonly means, that end-user press the previous page button.
+     *                     In general, it means that options.newCurrentPage is the previous page before options.oldCurrentPage
+     */
     onCurrentPageChanged = (survey, options) =>  {
         console.log(`[App.js] onCurrentPageChanged:: survey: ${JSON.stringify(survey)} \n options: ${JSON.stringify(options)}`);
     }
 
     /**
      * Validate a question
-     * @param options { Object } options.value to get the response of the question and if to show a custom error set the options.error
+     * The event is fired on validating value in a question. You can specify a custom error message using options.error.
+     * The survey blocks completing the survey or going to the next page when the error messages are displayed.
+     * sender - the survey object that fires the event.
+     * options.question - a validated question.
+     * options.name - a question name.
+     * options.value - the current question value (answer).
+     * options.error - an error string. It is empty by default.
      */
     onValidateQuestion = (survey, options) => {
         console.log(`[App.js] onValidateQuestion:: options: ${JSON.stringify(options)}`);
