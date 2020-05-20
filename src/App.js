@@ -4,7 +4,7 @@ import 'survey-react/survey.css';
 import * as Survey from 'survey-react';
 import './App.css';
 
-Survey.StylesManager.applyTheme("default");
+Survey.StylesManager.applyTheme("bootstrap");
 
 class App extends Component {
 
