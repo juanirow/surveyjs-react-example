@@ -23,12 +23,17 @@ class App extends Component {
         });
     }
 
+    onCurrentPageChanged = (survey, options) =>  {
+        console.log(`[App.js] onCurrentPageChanged:: survey: ${JSON.stringify(survey)} \n options: ${JSON.stringify(options)}`);
+    }
+
 
     render() {
         const survey = !this.state.isCompleted ? (
             <Survey.Survey
               json={config}
               onComplete={this.onComplete}
+              onCurrentPageChanged={this.onCurrentPageChanged}
               showCompletePage={false}
             /> ) : (
                 <h1>Survey Completed</h1>
