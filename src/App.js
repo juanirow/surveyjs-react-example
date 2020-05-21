@@ -12,11 +12,13 @@ class App extends Component {
 
     render() {
 
+        const page = this.id === "" ? <h1>404 Not Found</h1> : <MySurvey/>;
+
         return (
             <div className="container-fluid">
               <div className="row justify-content-lg-center">
                 <div className="col col-lg-10">
-                  <MySurvey/>
+                  {page}
                 </div>
               </div>
             </div>
