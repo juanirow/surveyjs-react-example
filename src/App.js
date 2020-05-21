@@ -10,6 +10,8 @@ class App extends Component {
 
     constructor(props) {
         super(props);
+        this.id = window.location.pathname.substring(1);
+        console.log(`[App.js] contructor:: id: ${this.id}`);
         this.state = {
             isCompleted: false
         };
