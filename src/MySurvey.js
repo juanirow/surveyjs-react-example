@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'survey-react/survey.css';
 import * as Survey from 'survey-react';
+import config from './survey-config.js';
 
 Survey.StylesManager.applyTheme("bootstrap");
 
