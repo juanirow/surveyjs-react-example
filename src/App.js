@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MySurvey from './MySurvey.js';
+import NotFound from './NotFound.js';
 
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
 
     render() {
 
-        const page = this.id === "" ? <h1>404 Not Found</h1> : <MySurvey/>;
+        const page = this.id === "" ? <NotFound/> : <MySurvey/>;
 
         return (
             <div className="container-fluid">
