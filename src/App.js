@@ -14,6 +14,8 @@ class App extends Component {
             isCompleted: false
         };
         this.onComplete = this.onComplete.bind(this);
+        this.onCurrentPageChanged = this.onCurrentPageChanged.bind(this);
+        this.onValidateQuestion = this.onValidateQuestion.bind(this);
     }
 
     /**
