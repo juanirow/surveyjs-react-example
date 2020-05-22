@@ -7,6 +7,9 @@ class SurveyContainer extends Component {
         super(pops);
     }
 
+    render() {
+        return (<MySurvey/>);
+    }
 }
 
 export default SurveyContainer;
