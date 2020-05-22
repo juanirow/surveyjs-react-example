@@ -9,6 +9,20 @@ class App extends Component {
         super(props);
         this.id = window.location.pathname.substring(1);
         console.log(`[App.js] contructor:: id: ${this.id}`);
+        if (this.id !== "") {
+            this.fetchData(this.id);
+        }
+    }
+
+    fetchData(id) {
+        fetch(`http://localhost:3001/${id}`)
+            .then( res => res.ok && res.json())
+            .then( data => {
+                console.log(`[App.js] fetchData id: ${id} data: ${data}`);
+            })
+            .catch(e => {
+                console.error(`[App.js] fetchData:: e: ${JSON.stringify(e)}`);
+            });
     }
 
     render() {
