@@ -1,0 +1,1811 @@
+{
+    "data": {
+        "focusFirstQuestionAutomatic": false,
+        "goNextPageAutomatic": false,
+        "completeText": "Sincronizar",
+        "saveAgainButton": "Reintentar",
+        "completedHtml": "<h5>Encuesta finalizada</h5>",
+        "locale": "es",
+        "pages": [
+            {
+                "elements": [
+                    {
+                        "type": "radiogroup",
+                        "name": "plaza",
+                        "title": "Plaza",
+                        "isRequired": true,
+                        "choices": [
+                            {
+                                "value": "1",
+                                "text": "CDMX"
+                            }, {
+                            "value": "2",
+                            "text": "Guadalajara"
+                            }, {
+                            "value": "3",
+                            "text": "Monterrey"
+                            }
+                        ]
+                    }, {
+                    "type": "dropdown",
+                    "choices": [
+                        {
+                            "value": "CDMX 1",
+                            "text": "CDMX 1"
+                        }, {
+                        "value": "CDMX 2",
+                        "text": "CDMX 2"
+                        }, {
+                        "value": "CDMX 3",
+                        "text": "CDMX 3"
+                        }, {
+                        "value": "CDMX 4",
+                        "text": "CDMX 4"
+                        }, {
+                        "value": "CDMX 5",
+                        "text": "CDMX 5"
+                        }
+                    ],
+                    "isRequired": true,
+                    "name": "encuestador",
+                    "title": {
+                        "es": "Nombre del encuestador"
+                    },
+                    "visible": false,
+                    "visibleIf": "{plaza} = 1"
+                    }, {
+                    "type": "dropdown",
+                    "choices": [
+                        {
+                            "value": "GDL 1",
+                            "text": "GDL 1"
+                        }, {
+                        "value": "GDL2",
+                        "text": "GDL2"
+                        }, {
+                        "value": "GDL3",
+                        "text": "GDL3"
+                        }, {
+                        "value": "GDL4",
+                        "text": "GDL4"
+                        }, {
+                        "value": "GDL 5",
+                        "text": "GDL 5"
+                        }
+                    ],
+                    "isRequired": true,
+                    "name": "encuestador",
+                    "title": {
+                        "es": "Nombre del encuestador"
+                    },
+                    "visible": false,
+                    "visibleIf": "{plaza} = 2"
+                    }, {
+                    "type": "dropdown",
+                    "choices": [
+                        {
+                            "value": "MTY 1",
+                            "text": "MTY 1"
+                        }, {
+                        "value": "MTY 2",
+                        "text": "MTY 2"
+                        }, {
+                        "value": "MTY 3",
+                        "text": "MTY 3"
+                        }, {
+                        "value": "MTY 4",
+                        "text": "MTY 4"
+                        }, {
+                        "value": "MTY 5",
+                        "text": "MTY 5"
+                        }
+                    ],
+                    "isRequired": true,
+                    "name": "encuestador",
+                    "title": {
+                        "es": "Nombre del encuestador"
+                    },
+                    "visible": false,
+                    "visibleIf": "{plaza} = 3"
+                    }, {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "F2_4",
+                    "title": "Nombre de la veterinaria"
+                    }, {
+                    "type": "html",
+                    "html": {
+                        "es": "<h3>Dirección de la veterinaria</h3>"
+                    },
+                    "name": "ADDRESS_LABEL"
+                    }, {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "F2_5_CALLE",
+                    "title": "Calle"
+                    }, {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "F2_5_NUM",
+                    "title": "Número"
+                    }, {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "F2_5_COL",
+                    "title": "Colonia"
+                    }, {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "F2_5_CP",
+                    "title": "C.P."
+                    }, {
+                    "type": "radiogroup",
+                    "name": "F3",
+                    "title": "Clasificación de la veterinaria",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "2",
+                            "text": "Veterinaria con tienda"
+                        }, {
+                        "value": "3",
+                        "text": "Veterinaria con estética y tienda"
+                        }
+                    ]
+                    }
+                ],
+                "name": "META"
+            }, {
+            "elements": [
+                {
+                    "type": "html",
+                    "html": "<p>Buenos días/tardes/noches, mi nombre es {encuestador} y trabajo para Inbox, una agencia de investigación de mercados. Estamos realizando una encuesta para conocer su opinión sobre ciertos aspectos relacionados con especialistas como usted y por eso quisiéramos su ayuda.\nToda la información que nos proporcione será tratada de manera confidencial y se analizará en conjunto con la opinión de otros veterinarios como usted, por otro lado le comento que no es nuestra intención vender ningún producto o convencerlo de algo, solo queremos conocer su punto de vista hacia algunas tendencias en el cuidado y la alimentación de las mascotas.\n</p>",
+                    "name": "S1"
+                }, {
+                "type": "radiogroup",
+                "name": "F0",
+                "title": "¿Podría regalarnos 15 minutos de su tiempo para contestarnos algunas preguntas?",
+                "isRequired": true,
+                "choices": [
+                    {
+                        "value": "1",
+                        "text": "Sí"
+                    }, {
+                    "value": "2",
+                    "text": "No"
+                    }
+                ]
+                }
+            ],
+            "name": "WELCOME"
+            }, {
+            "elements": [
+                {
+                    "type": "html",
+                    "html": {
+                        "es": "<h3>SECCIÓN GENERALES DEL ESPECIALISTA</h3>"
+                    },
+                    "name": "SEC1"
+                }, {
+                "type": "radiogroup",
+                "name": "F1",
+                "title": "Dígame por favor, ¿Es usted el veterinario que normalmente se encuentra en esta veterinaria atendiendo a los dueños de las mascotas que llegan a solicitar sus servicios?",
+                "isRequired": true,
+                "choices": [
+                    {
+                        "value": "1",
+                        "text": "Sí"
+                    }, {
+                    "value": "2",
+                    "text": "No"
+                    }
+                ]
+                }
+            ],
+            "name": "W2"
+            }, {
+            "elements": [
+                {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "F2_1",
+                    "title": "Nombre del veterinario"
+                }, {
+                "type": "text",
+                "inputType": "number",
+                "isRequired": true,
+                "name": "F2_2",
+                "title": "Edad",
+                "validators": [
+                    {
+                        "type": "numeric",
+                        "minValue": 23,
+                        "maxValue": 99
+                    }
+                ]
+                }, {
+                "type": "radiogroup",
+                "name": "F2_3",
+                "title": "Género (por observación)",
+                "isRequired": true,
+                "choices": [
+                    {
+                        "value": "1",
+                        "text": "Femenino"
+                    }, {
+                    "value": "2",
+                    "text": "Masculino"
+                    }
+                ]
+                }, {
+                "type": "text",
+                "isRequired": true,
+                "name": "F2_4",
+                "title": "Nombre de la veterinaria"
+                }, {
+                "type": "html",
+                "html": {
+                    "es": "<h3>Dirección de la veterinaria</h3>"
+                },
+                "name": "ADDRESS_LABEL"
+                }, {
+                "type": "text",
+                "isRequired": true,
+                "name": "F2_5_CALLE",
+                "title": "Calle"
+                }, {
+                "type": "text",
+                "isRequired": true,
+                "name": "F2_5_NUM",
+                "title": "Número"
+                }, {
+                "type": "text",
+                "isRequired": true,
+                "name": "F2_5_COL",
+                "title": "Colonia"
+                }, {
+                "type": "text",
+                "isRequired": true,
+                "name": "F2_5_CP",
+                "title": "C.P."
+                }, {
+                "type": "text",
+                "inputType": "number",
+                "isRequired": true,
+                "name": "F2_6",
+                "placeHolder": {
+                    "es": "0 - 99"
+                },
+                "title": {
+                    "default": "Antigüedad de la veterinaria",
+                    "es": "Antigüedad de la veterinaria (en años)"
+                },
+                "validators": [
+                    {
+                        "type": "numeric",
+                        "minValue": 0,
+                        "maxValue": 99,
+                        "text": "El valor debe estar entre 0 y 99"
+                    }
+                ]
+                }, {
+                "type": "radiogroup",
+                "name": "F3",
+                "title": "Clasificación de la veterinaria",
+                "isRequired": true,
+                "choices": [
+                    {
+                        "value": "2",
+                        "text": "Veterinaria con tienda"
+                    }, {
+                    "value": "3",
+                    "text": "Veterinaria con estética y tienda"
+                    }
+                ]
+                }, {
+                "type": "radiogroup",
+                "name": "F4",
+                "title": "Dígame por favor, ¿Cuántos años tiene de ejercer como veterinario? Mostrar tarjeta 1",
+                "isRequired": true,
+                "choices": [
+                    {
+                        "value": "1",
+                        "text": "Entre 2 y 3 años"
+                    }, {
+                    "value": "2",
+                    "text": "Entre 3 y 5 años"
+                    }, {
+                    "value": "3",
+                    "text": "Entre 5 y 10 años"
+                    }, {
+                    "value": "4",
+                    "text": "Más de 10 años"
+                    }
+                ]
+                }
+            ],
+            "name": "PERSONAL",
+            "title": {
+                "es": "Podría proporcionarme algunos datos generales:"
+            }
+            }, {
+            "elements": [
+                {
+                    "type": "html",
+                    "html": {
+                        "es": "<h3>SECCIÓN USOS Y HÁBITOS VETERINARIA</h3>"
+                    },
+                    "name": "SEC2"
+                }, {
+                "type": "radiogroup",
+                "name": "P1",
+                "title": "Dígame por favor, Comparando desde hace 2 años al día de hoy, qué tanto ha notado el aumento de visitas a esta veterinaria? Usted me diría que: Mostrar tarjeta 2",
+                "isRequired": true,
+                "choices": [
+                    {
+                        "value": "1",
+                        "text": "Ha aumentado mucho, más del 50%"
+                    }, {
+                    "value": "2",
+                    "text": "Ha aumentado mucho, más o menos un 30%"
+                    }, {
+                    "value": "3",
+                    "text": "Ha aumentado algo, más o menos un 20%"
+                    }, {
+                    "value": "4",
+                    "text": "Ha aumentado muy poco, más o menos un 10%"
+                    }, {
+                    "value": "5",
+                    "text": "Me parece que sigue igual"
+                    }, {
+                    "value": "6",
+                    "text": "Me parece que ha disminuido"
+                    }
+                ]
+                }
+            ],
+            "name": "U&A1"
+            }, {
+            "elements": [
+                {
+                    "type": "comment",
+                    "name": "P2",
+                    "visibleIf": "{P1} lessorequal 4",
+                    "title": "Dígame por favor, ¿A qué le atribuye este aumento de visitas? Algo más? Algo más? Insistir, sondear",
+                    "isRequired": true
+                }
+            ],
+            "name": "U&A1_1"
+            }, {
+            "elements": [
+                {
+                    "type": "multipletext",
+                    "isRequired": true,
+                    "items": [
+                        {
+                            "name": "P3_1",
+                            "isRequired": true,
+                            "inputType": "number",
+                            "title": "Criollos"
+                        }, {
+                        "name": "P3_2",
+                        "isRequired": true,
+                        "inputType": "number",
+                        "title": "Raza"
+                        }
+                    ],
+                    "name": "P3",
+                    "title": "Dígame por favor, De cada 10 perros que atiende en esta veterinaria, ¿Cuántos de ellos son criollos y cuántos de ellos son de raza?"
+                }
+            ],
+            "name": "U&A2"
+            }, {
+            "elements": [
+                {
+                    "type": "multipletext",
+                    "isRequired": true,
+                    "items": [
+                        {
+                            "name": "P4_1",
+                            "isRequired": true,
+                            "inputType": "number",
+                            "title": "De raza mini"
+                        }, {
+                        "name": "P4_2",
+                        "isRequired": true,
+                        "inputType": "number",
+                        "title": "De raza pequeña"
+                        }, {
+                        "name": "P4_3",
+                        "isRequired": true,
+                        "inputType": "number",
+                        "title": "De raza mediana"
+                        }, {
+                        "name": "P4_4",
+                        "isRequired": true,
+                        "inputType": "number",
+                        "title": "De raza grande"
+                        }
+                    ],
+                    "name": "P4",
+                    "title": "Ahora dígame por favor, de cada 10 perros de raza que atiende, cuántos de ellos son:"
+                }
+            ],
+            "name": "U&A2_1"
+            }, {
+            "elements": [
+                {
+                    "type": "multipletext",
+                    "isRequired": true,
+                    "items": [
+                        {
+                            "name": "P5_1",
+                            "isRequired": true,
+                            "inputType": "number",
+                            "title": "Cachorros o menores de 1 año de edad"
+                        }, {
+                        "name": "P5_2",
+                        "isRequired": true,
+                        "inputType": "number",
+                        "title": "Adultos jóvenes o que tengan entre 1 y 2 años de edad"
+                        }, {
+                        "name": "P5_3",
+                        "isRequired": true,
+                        "inputType": "number",
+                        "title": "Adultos mayores o que tengan entre 3 y 6 años de edad"
+                        }, {
+                        "name": "P5_4",
+                        "isRequired": true,
+                        "inputType": "number",
+                        "title": "Senior o que tengan 7 años o más"
+                        }
+                    ],
+                    "name": "P5",
+                    "title": "Ahora dígame, de cada 10 perros de raza y criollos, cuántos de ellos son:"
+                }
+            ],
+            "name": "U&A2_2"
+            }, {
+            "elements": [
+                {
+                    "type": "text",
+                    "inputType": "number",
+                    "isRequired": true,
+                    "name": "P6",
+                    "title": "En promedio, ¿Podría decirme cuántas mascotas tienen las personas que lo visitan?",
+                    "validators": [
+                        {
+                            "type": "numeric",
+                            "minValue": 1,
+                            "maxValue": 99,
+                            "text": "El valor debe estar entre 1 y 99"
+                        }
+                    ]
+                }
+            ],
+            "name": "U&A3"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P7",
+                    "title": "Hablando de un día normal y sin importar el motivo, ¿Dígame por favor aproximadamente cuántas personas visitan su veterinaria al día? Mostrar tarjeta 3",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Menos de 20 personas"
+                        }, {
+                        "value": "2",
+                        "text": "Entre 21 y 40 personas"
+                        }, {
+                        "value": "3",
+                        "text": "Entre 41 y 60 personas"
+                        }, {
+                        "value": "4",
+                        "text": "Entre 61 y 80 personas"
+                        }, {
+                        "value": "5",
+                        "text": "Entre 81 y 100 personas"
+                        }, {
+                        "value": "6",
+                        "text": "Más de 101 personas"
+                        }
+                    ]
+                }
+            ],
+            "name": "U&A3_1"
+            }, {
+            "elements": [
+                {
+                    "type": "matrix",
+                    "columns": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "isAllRowRequired": true,
+                    "isRequired": true,
+                    "name": "P8",
+                    "rows": [
+                        {
+                            "value": "P8_1",
+                            "text": "Porque su mascota es nueva o acaba de llegar a la familia"
+                        }, {
+                        "value": "P8_2",
+                        "text": "Porque se enfermó y era una emergencia"
+                        }, {
+                        "value": "P8_3",
+                        "text": "Porque se enfermó aunque no era una emergencia"
+                        }, {
+                        "value": "P8_4",
+                        "text": "Porque vienen a comprar alimento para sus mascotas"
+                        }, {
+                        "value": "P8_5",
+                        "text": "Porque vienen a revisión, vacunas, desparasitarlos  o a dar seguimiento a su tratamiento"
+                        }, {
+                        "value": "P8_6",
+                        "text": "Porque viene a darle servicio de estética a su mascota"
+                        }
+                    ],
+                    "title": "Dígame por favor, de las siguientes razones que le voy a leer, le voy a pedir que las ordene de mayor a menor, siendo la número 1, la primer razón por la cual lo visitan con mayor frecuencia en esta veterinaria y la 6 la razón por la que menos lo visitan. Mostrar tarjeta 4"
+                }
+            ],
+            "name": "U&A4"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P9",
+                    "title": "¿Existen otras razones por las cuales visitan su veterinaria?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Sí"
+                        }, {
+                        "value": "2",
+                        "text": "No"
+                        }
+                    ]
+                }
+            ],
+            "name": "U&A4_1"
+            }, {
+            "elements": [
+                {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "P9_CUALES",
+                    "title": "¿Cuáles?",
+                    "visible": false,
+                    "visibleIf": "{P9} = 1"
+                }
+            ],
+            "name": "U&A4_2"
+            }, {
+            "elements": [
+                {
+                    "type": "matrix",
+                    "columns": [
+                        {
+                            "value": "1",
+                            "text": "Diario"
+                        }, {
+                        "value": "2",
+                        "text": "3 veces por semana"
+                        }, {
+                        "value": "3",
+                        "text": "1 vez por semana"
+                        }, {
+                        "value": "4",
+                        "text": "Cada 15 días"
+                        }, {
+                        "value": "5",
+                        "text": "Cada 3 semanas"
+                        }, {
+                        "value": "6",
+                        "text": "Cada mes"
+                        }, {
+                        "value": "7",
+                        "text": "Cada mes y medio"
+                        }, {
+                        "value": "8",
+                        "text": "Cada 2 meses"
+                        }, {
+                        "value": "9",
+                        "text": "Cada 3 meses o más"
+                        }, {
+                        "value": "10",
+                        "text": "Nunca"
+                        }
+                    ],
+                    "isAllRowRequired": true,
+                    "isRequired": true,
+                    "name": "P10",
+                    "rows": [
+                        {
+                            "value": "P10_1",
+                            "text": "Estética"
+                        }, {
+                        "value": "P10_2",
+                        "text": "Desparacitación"
+                        }, {
+                        "value": "P10_3",
+                        "text": "Cirugía"
+                        }, {
+                        "value": "P10_4",
+                        "text": "Venta de alimento"
+                        }, {
+                        "value": "P10_5",
+                        "text": "Venta de accesorios"
+                        }, {
+                        "value": "P10_6",
+                        "text": "Revisión de rutina"
+                        }
+                    ],
+                    "title": "Dígame por favor. De los siguientes servicios, ¿con qué frecuencia vende u ofrece cada uno de ellos? (leer opciones de frecuencia). Mostrar tarjeta 5"
+                }
+            ],
+            "name": "U&A5"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P11",
+                    "title": "Además de los servicios que le mencioné anteriormente, ¿existe otro que ofrezca o venda y que se encuentre dentro de los 3 más importantes?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Sí"
+                        }, {
+                        "value": "2",
+                        "text": "No"
+                        }
+                    ]
+                }
+            ],
+            "name": "U&A5_1"
+            }, {
+            "elements": [
+                {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "P11_CUALES",
+                    "title": "¿Cuáles?",
+                    "visible": false,
+                    "visibleIf": "{P11} = 1"
+                }
+            ],
+            "name": "U&A5_2"
+            }, {
+            "elements": [
+                {
+                    "type": "multipletext",
+                    "isRequired": true,
+                    "items": [
+                        {
+                            "name": "P12_1",
+                            "isRequired": true,
+                            "title": {
+                                "default": "Tema",
+                                "es": "Tema 1"
+                            }
+                        }, {
+                        "name": "P12_2",
+                        "isRequired": true,
+                        "title": {
+                            "default": "¿Algo más?",
+                            "es": "Tema 2"
+                        }
+                        }, {
+                        "name": "P12_3",
+                        "isRequired": true,
+                        "title": {
+                            "default": "¿Algo más?",
+                            "es": "Tema 3"
+                        }
+                        }
+                    ],
+                    "name": "P12",
+                    "title": {
+                        "default": "Cuando vienen a visitarlo ¿Cuáles considera que son los tres temas en los que más interés muestran los dueños de las mascotas?",
+                        "es": "Cuando vienen a visitarlo ¿Cuáles considera que son los tres temas en los que más interés muestran los dueños de las mascotas? ¿Algo más? ¿Algo más?"
+                    }
+                }
+            ],
+            "name": "U&A6"
+            }, {
+            "elements": [
+                {
+                    "type": "text",
+                    "inputType": "number",
+                    "isRequired": true,
+                    "name": "P13",
+                    "title": "De cada 10 visitas que tiene, ¿en cuántas de ellas se habla de alimentación de la mascota?",
+                    "validators": [
+                        {
+                            "type": "numeric",
+                            "minValue": 0,
+                            "maxValue": 10,
+                            "text": "El valor debe estar entre 0 y 10"
+                        }
+                    ]
+                }
+            ],
+            "name": "U&A6_1"
+            }, {
+            "elements": [
+                {
+                    "type": "html",
+                    "html": {
+                        "es": "<h3>SECCIÓN CONSUMO Y PARTICIPACIÓN DE ALIMENTO</h3>"
+                    },
+                    "name": "SEC3"
+                }, {
+                "type": "text",
+                "inputType": "number",
+                "isRequired": true,
+                "name": "P14",
+                "title": "De cada 10 visitas que tiene, ¿En cuántas de ellas realizan compra de alimento?",
+                "validators": [
+                    {
+                        "type": "numeric",
+                        "minValue": 0,
+                        "maxValue": 10,
+                        "text": "El valor debe estar entre 0 y 10"
+                    }
+                ]
+                }
+            ],
+            "name": "U&A6_2"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P15",
+                    "title": "Dígame por favor, de un 100%, ¿Qué porcentaje representa para usted la venta de alimento en los ingresos totales de su veterinaria? Mostrar tarjeta 6",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Menos de el 10%"
+                        }, {
+                        "value": "2",
+                        "text": "Entre el 10% y el 30%"
+                        }, {
+                        "value": "3",
+                        "text": "Entre el 30% y el 50%"
+                        }, {
+                        "value": "4",
+                        "text": "Entre el 50% y el 70%"
+                        }, {
+                        "value": "5",
+                        "text": "Más del 70%"
+                        }, {
+                        "value": "6",
+                        "text": "No lo sé"
+                        }
+                    ]
+                }
+            ],
+            "name": "U&A7"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P16",
+                    "title": "Dígame por favor, de manera general, de las personas que vienen a esta veterinaria a comprar alimento, ¿Con qué frecuencia lo hacen el promedio? Mostrar tarjeta 7",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Cada semana"
+                        }, {
+                        "value": "2",
+                        "text": "Cada 15 días"
+                        }, {
+                        "value": "3",
+                        "text": "Cada 3 semanas"
+                        }, {
+                        "value": "4",
+                        "text": "Cada mes"
+                        }, {
+                        "value": "5",
+                        "text": "Cada mes y medio o más"
+                        }
+                    ]
+                }
+            ],
+            "name": "U&A7_1"
+            }, {
+            "elements": [
+                {
+                    "type": "checkbox",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "NUPEC"
+                        }, {
+                        "value": "2",
+                        "text": "PROPLAN"
+                        }, {
+                        "value": "3",
+                        "text": "ROYAL CANIN"
+                        }, {
+                        "value": "4",
+                        "text": "EUKANUBA"
+                        }, {
+                        "value": "5",
+                        "text": "DIAMOND"
+                        }, {
+                        "value": "6",
+                        "text": "HILLS"
+                        }, {
+                        "value": "7",
+                        "text": "ANF"
+                        }, {
+                        "value": "8",
+                        "text": "PROPAC"
+                        }, {
+                        "value": "9",
+                        "text": {
+                            "default": "BLUE BÚFALO",
+                            "es": "BLUE BÚFFALO"
+                        }
+                        }
+                    ],
+                    "isRequired": true,
+                    "name": "P17",
+                    "title": "Dígame por favor de las siguientes marcas que le voy a mencionar, ¿Cuáles de ellas vende en esta veterinaria aún cuando en este momento no las tenga en existencia? (marcar todas las que diga que si vende)"
+                }, {
+                "type": "text",
+                "name": "P17_97",
+                "title": "¿Otra?"
+                }, {
+                "type": "text",
+                "name": "P17_98",
+                "enableIf": "{P17_97} notempty",
+                "title": "¿Otra?"
+                }, {
+                "type": "text",
+                "name": "P17_99",
+                "enableIf": "{P17_98} notempty",
+                "title": "¿Otra?"
+                }
+            ],
+            "name": "U&A7_2"
+            }, {
+            "elements": [
+                {
+                    "type": "multipletext",
+                    "isRequired": true,
+                    "name": "P18",
+                    "title": "De cada una de las marcas que vende, dígame por favor, ¿Qué porcentaje de participación de venta tiene cada una de estas marcas?"
+                }
+            ],
+            "name": "U&A8"
+            }, {
+            "elements": [
+                {
+                    "type": "multipletext",
+                    "isRequired": true,
+                    "name": "P19",
+                    "title": "Dígame por favor, en una escala del 0 al 10, donde 0 es no la recomiendo en lo absoluto y 10 la recomiendo ampliamente, ¿Qué tanto recomienda cada una de las marcas que vende? usted me diría que:"
+                }
+            ],
+            "name": "U&A8_1"
+            }, {
+            "elements": [
+                {
+                    "type": "panel",
+                    "elements": [
+                        {
+                            "type": "dropdown",
+                            "isRequired": true,
+                            "name": "P20",
+                            "title": {
+                                "es": "Marca recomendada que vende"
+                            }
+                        }, {
+                        "type": "comment",
+                        "isRequired": true,
+                        "name": "P20_MOTIVO",
+                        "title": {
+                            "es": "Motivos de recomendación"
+                        }
+                        }, {
+                        "type": "radiogroup",
+                        "choices": [
+                            {
+                                "value": "1",
+                                "text": {
+                                    "es": "Sí"
+                                }
+                            }, {
+                            "value": "2",
+                            "text": {
+                                "es": "No"
+                            }
+                            }
+                        ],
+                        "colCount": "2",
+                        "isRequired": true,
+                        "name": "P20_1",
+                        "title": {
+                            "es": "¿Existe otra marca que no venda en esta veterinaria y que también recomiende para cachorro?"
+                        }
+                        }
+                    ],
+                    "name": "PANEL1",
+                    "title": {
+                        "es": "¿Qué marca de las que vende es la que más recomienda para cachorro y por qué?"
+                    }
+                }
+            ],
+            "name": "U&A9"
+            }, {
+            "name": "U&A920",
+            "visibleIf": "{P20_1} = 1",
+            "elements": [
+                {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "P20_1_CUAL",
+                    "placeHolder": {
+                        "es": "Marca recomendada"
+                    },
+                    "title": {
+                        "es": "¿Cuál es la marca que recomienda para cachorro?"
+                    }
+                }, {
+                "type": "comment",
+                "isRequired": true,
+                "name": "P20_1_MOTIVO",
+                "title": {
+                    "es": "Motivos de recomendación"
+                }
+                }
+            ]
+            }, {
+            "elements": [
+                {
+                    "type": "panel",
+                    "elements": [
+                        {
+                            "type": "dropdown",
+                            "isRequired": true,
+                            "name": "P21",
+                            "title": {
+                                "es": "Marca recomendada que vende"
+                            }
+                        }, {
+                        "type": "comment",
+                        "isRequired": true,
+                        "name": "P21_MOTIVO",
+                        "title": {
+                            "es": "Motivos de recomendación"
+                        }
+                        }, {
+                        "type": "radiogroup",
+                        "choices": [
+                            {
+                                "value": "1",
+                                "text": {
+                                    "es": "Sí"
+                                }
+                            }, {
+                            "value": "2",
+                            "text": {
+                                "es": "No"
+                            }
+                            }
+                        ],
+                        "colCount": "2",
+                        "isRequired": true,
+                        "name": "P21_1",
+                        "title": {
+                            "es": "¿Existe otra marca que no venda en esta veterinaria y que también recomiende para adulto?"
+                        }
+                        }
+                    ],
+                    "name": "PANEL2",
+                    "title": {
+                        "es": "¿Qué marca de las que vende es la que más recomienda para adulto y por qué?"
+                    }
+                }
+            ],
+            "name": "U&A9_1"
+            }, {
+            "name": "U&A921",
+            "visibleIf": "{P21_1} = 1",
+            "elements": [
+                {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "P21_1_CUAL",
+                    "placeHolder": {
+                        "es": "Marca recomendada"
+                    },
+                    "title": {
+                        "es": "¿Cuál es la marca que recomienda para adulto?"
+                    }
+                }, {
+                "type": "comment",
+                "isRequired": true,
+                "name": "P21_1_MOTIVO",
+                "title": {
+                    "es": "Motivos de recomendación"
+                }
+                }
+            ]
+            }, {
+            "elements": [
+                {
+                    "type": "panel",
+                    "elements": [
+                        {
+                            "type": "dropdown",
+                            "isRequired": true,
+                            "name": "P22",
+                            "title": {
+                                "es": "Marca recomendada que vende"
+                            }
+                        }, {
+                        "type": "comment",
+                        "isRequired": true,
+                        "name": "P22_MOTIVO",
+                        "title": {
+                            "es": "Motivos de recomendación"
+                        }
+                        }, {
+                        "type": "radiogroup",
+                        "choices": [
+                            {
+                                "value": "1",
+                                "text": {
+                                    "es": "Sí"
+                                }
+                            }, {
+                            "value": "2",
+                            "text": {
+                                "es": "No"
+                            }
+                            }
+                        ],
+                        "colCount": "2",
+                        "isRequired": true,
+                        "name": "P22_1",
+                        "title": {
+                            "es": "¿Existe otra marca que no venda en esta veterinaria y que también recomiende para senior?"
+                        }
+                        }
+                    ],
+                    "name": "PANEL3",
+                    "title": {
+                        "es": "¿Qué marca de las que vende es la que más recomienda para senior y por qué?"
+                    }
+                }
+            ],
+            "name": "U&A9_2"
+            }, {
+            "name": "U&A923",
+            "visibleIf": "{P22_1} = 1",
+            "elements": [
+                {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "P22_1_CUAL",
+                    "placeHolder": {
+                        "es": "Marca recomendada"
+                    },
+                    "title": {
+                        "es": "¿Existe otra marca que no venda en esta veterinaria y que también recomiende para senior?"
+                    }
+                }, {
+                "type": "comment",
+                "isRequired": true,
+                "name": "P22_1_MOTIVO",
+                "title": {
+                    "es": "Motivos de recomendación"
+                }
+                }
+            ]
+            }, {
+            "elements": [
+                {
+                    "type": "matrix",
+                    "rows": [],
+                    "isRequired": true,
+                    "name": "P23",
+                    "columns": [
+                        {
+                            "value": "1",
+                            "text": "Precio del alimento"
+                        }, {
+                        "value": "2",
+                        "text": "Calidad de los componentes del alimento"
+                        }, {
+                        "value": "3",
+                        "text": "Costo - beneficio"
+                        }, {
+                        "value": "4",
+                        "text": "Nutrientes"
+                        }, {
+                        "value": "5",
+                        "text": "Imagen - empaque"
+                        }, {
+                        "value": "6",
+                        "text": "Frescura"
+                        }, {
+                        "value": "7",
+                        "text": "Digestibilidad"
+                        }
+                    ],
+                    "title": "De las marcas que vende, dígame por favor, ¿Cuál considera el mayor atributo de cada una? Mostrar tarjeta 8"
+                }
+            ],
+            "name": "U&A10"
+            }, {
+            "elements": [
+                {
+                    "type": "text",
+                    "isRequired": true,
+                    "name": "P24",
+                    "title": "Dígame por favor cuál considera usted que es el principal diferenciador entre una marca de alimento para mascotas premium y una super premium?"
+                }
+            ],
+            "name": "U&A11"
+            }, {
+            "elements": [
+                {
+                    "type": "multipletext",
+                    "isRequired": true,
+                    "items": [
+                        {
+                            "name": "P25_1",
+                            "isRequired": true,
+                            "title": "Elemento 1"
+                        }, {
+                        "name": "P25_2",
+                        "isRequired": true,
+                        "title": "Elemento 2"
+                        }, {
+                        "name": "P25_3",
+                        "isRequired": true,
+                        "title": "Elemento 3"
+                        }
+                    ],
+                    "name": "P25",
+                    "title": "Dígame por favor, ¿Cuáles son los 3 elementos que usted considera que un alimento para mascota debe tener para que éste sea considerado como SUPER PREMIUM?"
+                }
+            ],
+            "name": "U&A11_1"
+            }, {
+            "elements": [
+                {
+                    "type": "matrix",
+                    "columns": [
+                        {
+                            "value": "PRIMERA",
+                            "text": "Primera mención"
+                        }, {
+                        "value": "SEGUNDA",
+                        "text": "Segunda mención"
+                        }
+                    ],
+                    "isRequired": true,
+                    "name": "P26_",
+                    "rows": [
+                        {
+                            "value": "1",
+                            "text": "NUPEC"
+                        }, {
+                        "value": "2",
+                        "text": "PROPLAN"
+                        }, {
+                        "value": "3",
+                        "text": "ROYAL CANIN"
+                        }, {
+                        "value": "4",
+                        "text": "EUKANUBA"
+                        }, {
+                        "value": "5",
+                        "text": "DIAMOND"
+                        }, {
+                        "value": "6",
+                        "text": "HILLS"
+                        }, {
+                        "value": "7",
+                        "text": "ANF"
+                        }, {
+                        "value": "8",
+                        "text": "PROPAC"
+                        }, {
+                        "value": "9",
+                        "text": "BLUE BÚFALO"
+                        }, {
+                        "value": "99",
+                        "text": "OTRA"
+                        }
+                    ],
+                    "title": "Dígame por favor, Qué marcas de alimento para mascota recuerda como Super Premium? Alguna otra? Alguna más?"
+                }, {
+                "type": "checkbox",
+                "choices": [
+                    {
+                        "value": "1",
+                        "text": "NUPEC"
+                    }, {
+                    "value": "2",
+                    "text": "PROPLAN"
+                    }, {
+                    "value": "3",
+                    "text": "ROYAL CANIN"
+                    }, {
+                    "value": "4",
+                    "text": "EUKANUBA"
+                    }, {
+                    "value": "5",
+                    "text": "DIAMOND"
+                    }, {
+                    "value": "6",
+                    "text": "HILLS"
+                    }, {
+                    "value": "7",
+                    "text": "ANF"
+                    }, {
+                    "value": "8",
+                    "text": "PROPAC"
+                    }, {
+                    "value": "9",
+                    "text": "BLUE BÚFALO"
+                    }, {
+                    "value": "99",
+                    "text": "OTRA"
+                    }
+                ],
+                "isRequired": true,
+                "name": "P26",
+                "title": "Resto de menciones"
+                }
+            ],
+            "name": "U&A12"
+            }, {
+            "elements": [
+                {
+                    "type": "html",
+                    "html": {
+                        "es": "<h3>SECCIÓN CONSUMO Y PARTICIPACIÓN DE NUPEC</h3>"
+                    },
+                    "name": "SEC1"
+                }, {
+                "type": "radiogroup",
+                "name": "P27",
+                "title": "Por observación registre si la marca NUPEC  está a la vista en existencia:",
+                "isRequired": true,
+                "choices": [
+                    {
+                        "value": "1",
+                        "text": "Sí"
+                    }, {
+                    "value": "2",
+                    "text": "No"
+                    }
+                ]
+                }
+            ],
+            "name": "NUPEC",
+            "visible": false,
+            "visibleIf": "{P17} contains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "comment",
+                    "name": "P27_1",
+                    "visible": false,
+                    "visibleIf": "{P27} = 2",
+                    "title": "Usted me dijo que si vendía la marca NUPEC, sin embargo no se encuentra a la vista, podría comentarme por qué es así? Algo más? Algo más?",
+                    "isRequired": true
+                }
+            ],
+            "name": "NUPEC_1",
+            "visible": false,
+            "visibleIf": "{P17} contains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "multipletext",
+                    "isRequired": true,
+                    "items": [
+                        {
+                            "name": "P28_1",
+                            "isRequired": true,
+                            "title": "Razón 1"
+                        }, {
+                        "name": "P28_2",
+                        "isRequired": true,
+                        "title": "Razón 2"
+                        }, {
+                        "name": "P28_3",
+                        "isRequired": true,
+                        "title": "Razón 3"
+                        }
+                    ],
+                    "name": "P28",
+                    "title": "Dígame por favor, ¿Cuáles son las 3 principales razones por las cuales usted vende la marca NUPEC en esta veterinaria:"
+                }
+            ],
+            "name": "NUPEC_2",
+            "visible": false,
+            "visibleIf": "{P17} contains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P29",
+                    "title": "Dígame por favor, ¿Desde cuándo comercializa la marca NUPEC en esta veterinaria? Mostrar tarjeta 9",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Desde hace menos de un año"
+                        }, {
+                        "value": "2",
+                        "text": "Desde hace un año"
+                        }, {
+                        "value": "3",
+                        "text": "Desde hace dos años"
+                        }, {
+                        "value": "4",
+                        "text": "Desde hace 3 años o más"
+                        }
+                    ]
+                }
+            ],
+            "name": "NUPEC_3",
+            "visible": false,
+            "visibleIf": "{P17} contains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "comment",
+                    "name": "P30",
+                    "title": "Dentro de las marcas que me comentó que vendía, no me mencionó la marca NUPEC, ¿Podría decirme las razones por las cuales no la vende? Algo más? Algo más?",
+                    "isRequired": true
+                }
+            ],
+            "name": "NO_NUPEC",
+            "visibleIf": "{P17} notcontains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P31",
+                    "title": "Dígame por favor, ¿en algún momento vendió la marca NUPEC?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Sí"
+                        }, {
+                        "value": "2",
+                        "text": "No"
+                        }
+                    ]
+                }
+            ],
+            "name": "NO_NUPEC_1",
+            "visibleIf": "{P17} notcontains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "comment",
+                    "name": "P32",
+                    "visible": false,
+                    "visibleIf": "{P31} = 1",
+                    "title": "¿Por qué dejó de hacerlo? Algo más? Algo más? Insistir, sondear",
+                    "isRequired": true
+                }
+            ],
+            "name": "NO_NUPEC_2",
+            "visibleIf": "{P17} notcontains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "comment",
+                    "name": "P33",
+                    "visible": false,
+                    "visibleIf": "{P31} = 2",
+                    "title": "¿Por qué razón no ha vendido la marca NUPEC? Algo más? Algo más? Insistir, sondear",
+                    "isRequired": true
+                }
+            ],
+            "name": "NO_NUPEC_3",
+            "visibleIf": "{P17} notcontains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P34",
+                    "title": "¿Qué tan probable es que usted pueda o quiera volver a comercializar o iniciar a comercializar la marca NUPEC en su veterinaria? Mostrar tarjeta 10",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Mucho muy probable"
+                        }, {
+                        "value": "2",
+                        "text": "Muy probable"
+                        }, {
+                        "value": "3",
+                        "text": "Algo probable"
+                        }, {
+                        "value": "4",
+                        "text": "Poco probable"
+                        }, {
+                        "value": "5",
+                        "text": "Nada probable"
+                        }
+                    ]
+                }
+            ],
+            "name": "NO_NUPEC_4",
+            "visibleIf": "{P17} notcontains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "comment",
+                    "name": "P35",
+                    "title": "Por qué razones comenta que es {P34} que vuelva o que quiera iniciar a comercializar la marca NUPEC en su veterinaria? Algo más? Insistir, sondear",
+                    "isRequired": true
+                }
+            ],
+            "name": "NO_NUPEC_5",
+            "visibleIf": "{P17} notcontains 1"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P36",
+                    "title": "De acuerdo a las siguientes frases que le voy a mencionar, dígame por favor de manera general con cuál de ellas se siente más identificado respecto a la marca de alimento NUPEC: Mostrar tarjeta 11",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Es la única marca que recomiendo, me parece la mejor que existe en el mercado"
+                        }, {
+                        "value": "2",
+                        "text": "Es la marca que recomiendo la mayoría de las veces, es una de las mejores que existen en el mercado"
+                        }, {
+                        "value": "3",
+                        "text": "A veces la recomiendo, a veces no, la verdad es una marca que me resulta indiferente"
+                        }, {
+                        "value": "4",
+                        "text": "Es una marca que no recomiendo, me parece que hay muchas que son mejores"
+                        }
+                    ]
+                }
+            ],
+            "name": "NUPEC_S"
+            }, {
+            "elements": [
+                {
+                    "type": "rating",
+                    "name": "P37",
+                    "title": "En una escala del 0 al 10, donde 0 es no la recomiendo en lo absoluto y 10 es la recomiendo muchísimo, ¿Qué tanto recomendaría el alimento para mascotas de la marca NUPEC?",
+                    "isRequired": true,
+                    "rateValues": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10"
+                    ],
+                    "minRateDescription": "No la recomiendo en lo absoluto",
+                    "maxRateDescription": "La recomiendo muchísimo"
+                }
+            ],
+            "name": "NUPEC_S_1"
+            }, {
+            "elements": [
+                {
+                    "type": "comment",
+                    "name": "P38",
+                    "visible": false,
+                    "visibleIf": "{P37} < 6",
+                    "title": "Dígame por favor por qué razones usted me dijo que da un {P37} como recomendación de la marca NUPEC? algo más? algo más? Insistir, sondear",
+                    "isRequired": true
+                }
+            ],
+            "name": "NUPEC_S_2"
+            }, {
+            "elements": [
+                {
+                    "type": "rating",
+                    "name": "P43",
+                    "title": "En una escala del 0 al 10, donde 0 es no la recomiendo en lo absoluto y 10 es la recomiendo muchísimo, ¿Qué tanto recomendaría el alimento para mascotas de la marca PROPLAN?",
+                    "isRequired": true,
+                    "rateValues": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10"
+                    ],
+                    "minRateDescription": "No la recomiendo en lo absoluto",
+                    "maxRateDescription": "La recomiendo muchísimo"
+                }
+            ],
+            "name": "PROPLAN_S"
+            }, {
+            "elements": [
+                {
+                    "type": "rating",
+                    "name": "P44",
+                    "title": "En una escala del 0 al 10, donde 0 es no la recomiendo en lo absoluto y 10 es la recomiendo muchísimo, ¿Qué tanto recomendaría el alimento para mascotas de la marca ROYAL CANIN?",
+                    "isRequired": true,
+                    "rateValues": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10"
+                    ],
+                    "minRateDescription": "No la recomiendo en lo absoluto",
+                    "maxRateDescription": "La recomiendo muchísimo"
+                }
+            ],
+            "name": "ROYAL_S"
+            }, {
+            "elements": [
+                {
+                    "type": "html",
+                    "html": {
+                        "es": "<h3>SECCIÓN HÁBITOS DE SWITCHING DE MARCAS</h3>"
+                    },
+                    "name": "SEC3"
+                }, {
+                "type": "radiogroup",
+                "name": "P39",
+                "title": "Dígame por favor, de las personas que lo visitan y que compran alimento, sin importar la marca que compra, Cuántos considera que cambian de marca después de uno o dos años de uso? Usted me diría que: Mostrar tarjeta 12",
+                "isRequired": true,
+                "choices": [
+                    {
+                        "value": "1",
+                        "text": "Menos de 20%"
+                    }, {
+                    "value": "2",
+                    "text": "Entre el 30% y el 50%"
+                    }, {
+                    "value": "3",
+                    "text": "Entre el 50% y el 70%"
+                    }, {
+                    "value": "4",
+                    "text": "Más del 70%"
+                    }
+                ]
+                }
+            ],
+            "name": "SWITCHING"
+            }, {
+            "elements": [
+                {
+                    "type": "multipletext",
+                    "isRequired": true,
+                    "items": [
+                        {
+                            "name": "P40_1",
+                            "isRequired": true,
+                            "title": "Motivo 1"
+                        }, {
+                        "name": "P40_2",
+                        "isRequired": true,
+                        "title": "Motivo 2"
+                        }, {
+                        "name": "P40_3",
+                        "isRequired": true,
+                        "title": "Motivo 3"
+                        }
+                    ],
+                    "name": "P40",
+                    "title": "Dígame por favor ¿Cuáles considera los principales 3 motivos por los cuales cambian de marca?"
+                }
+            ],
+            "name": "SWITCHING_1"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P41",
+                    "title": "Tomando en cuenta los clientes que cambian de marca ¿Cuántos de ellos cree que han migrado de consumir una marca de alimento comercial a una marca Súper Premium? Mostrar tarjeta 12",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Menos de 20%"
+                        }, {
+                        "value": "2",
+                        "text": "Entre el 30% y el 50%"
+                        }, {
+                        "value": "3",
+                        "text": "Entre el 50% y el 70%"
+                        }, {
+                        "value": "4",
+                        "text": "Más del 70%"
+                        }
+                    ]
+                }
+            ],
+            "name": "SWITCHING_2"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P42",
+                    "title": "Dígame por favor, de acuerdo a su percepción y de acuerdo a las mascotas que usted atiende, ¿Qué porcentaje de cachorros que consumían alimento super premium, pasa a consumir aliento comercial una vez que se convierte en adulto? Mostrar tarjeta 12",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Menos de 20%"
+                        }, {
+                        "value": "2",
+                        "text": "Entre el 30% y el 50%"
+                        }, {
+                        "value": "3",
+                        "text": "Entre el 50% y el 70%"
+                        }, {
+                        "value": "4",
+                        "text": "Más del 70%"
+                        }
+                    ]
+                }
+            ],
+            "name": "SWITCHING_3"
+            }, {
+            "elements": [
+                {
+                    "type": "checkbox",
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Diabetes"
+                        }, {
+                        "value": "2",
+                        "text": "Hipotiroidismo"
+                        }, {
+                        "value": "3",
+                        "text": "Alergias"
+                        }, {
+                        "value": "4",
+                        "text": "Obesidad"
+                        }, {
+                        "value": "5",
+                        "text": "Problemas renales"
+                        }, {
+                        "value": "6",
+                        "text": "Problemas articulares"
+                        }
+                    ],
+                    "isRequired": true,
+                    "name": "P48",
+                    "title": "¿Cuáles son los padecimientos más comunes que presentan las mascotas que atiende, y que pueda tratar o prevenir con dieta? ¿Alguna otra? ¿Alguna más?"
+                }, {
+                "type": "comment",
+                "name": "P49",
+                "title": "Otra"
+                }, {
+                "type": "comment",
+                "name": "P50",
+                "title": "Otra"
+                }
+            ],
+            "name": "DISEASES"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P45",
+                    "title": "¿Sabe o ha escuchado del lanzamiento del nuevo producto Nupec First Care para el cuidado de los cachorros?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Sí"
+                        }, {
+                        "value": "2",
+                        "text": "No"
+                        }
+                    ]
+                }
+            ],
+            "name": "NFC_POS"
+            }, {
+            "elements": [
+                {
+                    "type": "radiogroup",
+                    "name": "P46",
+                    "title": "¿Lo ha recomendado a sus clientes con cachorros?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "1",
+                            "text": "Sí"
+                        }, {
+                        "value": "2",
+                        "text": "No"
+                        }
+                    ]
+                }, {
+                "type": "comment",
+                "name": "P47",
+                "title": "¿Por qué?",
+                "isRequired": true
+                }
+            ],
+            "name": "NFC_RECOMMEND"
+            }, {
+            "elements": [
+                {
+                    "type": "html",
+                    "html": "<h5>Esto ha sido todo, muchas gracias</h5>",
+                    "name": "SP2"
+                }, {
+                "type": "html",
+                "html": "<h5>Presiona el botón para completar la encuesta, asegúrate de contar con conexión a internet.</h5>",
+                "name": "SP3"
+                }
+            ],
+            "name": "THANKS"
+            }
+        ],
+        "showPrevButton": false,
+        "showQuestionNumbers": "off",
+        "triggers": [
+            {
+                "type": "complete",
+                "operator": "equal",
+                "value": "2",
+                "name": "F0"
+            }, {
+            "type": "complete",
+            "operator": "equal",
+            "value": "2",
+            "name": "F1"
+            }, {
+            "type": "complete",
+            "operator": "less",
+            "value": "2",
+            "name": "F2_6"
+            }, {
+            "type": "complete",
+            "operator": "equal",
+            "value": "2",
+            "name": "P45"
+            }
+        ]
+    }
+}
