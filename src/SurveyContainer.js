@@ -3,8 +3,8 @@ import MySurvey from './MySurvey.js';
 
 class SurveyContainer extends Component {
 
-    contructor(props) {
-        super(pops);
+    constructor(props) {
+        super(props);
     }
 
     render() {
